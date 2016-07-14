@@ -18,7 +18,7 @@ public class ClienteController {
                Cliente cliente = new Cliente(nome, s, cpf); 
                ClienteDAO cdao = new ClienteDAO();
                if (cdao.inserir(cliente)){
-                   return true;
+               return true;
                    
                }
            }
@@ -29,6 +29,16 @@ public class ClienteController {
                
            }
            
+    public boolean excluir(){
+        
+        
+        
+        
+        
+        
+        
+    }     
+ }
     
     
     
@@ -36,5 +46,4 @@ public class ClienteController {
     
     
     
-    
-}
+
