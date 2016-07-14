@@ -28,12 +28,10 @@ public class ClienteGUI {
             System.out.println("Cliente Cadastrado com Sucesso");
             
         }else{
-            System.out.println("Falha no cadastro");
-     
+            System.out.println("Falha no cadastro"); 
           
         }
-        
-        
+         
     }
      
     public static void main(String[] args) {
