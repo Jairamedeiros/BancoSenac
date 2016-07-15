@@ -34,6 +34,16 @@ public class ClienteGUI {
          
     }
      
+    
+    public void listar(){
+        ClienteController cc = new ClienteController();
+        cc.listar();
+        
+    }
+    
+    
+    
+    
     public static void main(String[] args) {
         ClienteGUI gui = new ClienteGUI();
         gui.cadastrar();

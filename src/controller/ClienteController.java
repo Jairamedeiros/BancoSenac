@@ -1,5 +1,5 @@
 /*
-
+GUI =(É MOSTRAR) E SÓ PODE ACESSAR O CONTROLLER
  */
 package controller;
 
@@ -25,18 +25,22 @@ public class ClienteController {
            
            return false;
                
-               
+             
                
            }
            
-    public boolean excluir(){
+    public void listar(){
+        ClienteDAO cdao = new ClienteDAO();
+        for(Cliente c: cdao.buscarTudo()){
+            System.out.println(
+                    "\tId: " + c.getId() +
+                    "\tCPF: " + c.getCpf() +
+                    "\tNome: "  + c.getNome() +
+                    "\tSexo: "  + c.getSexo().getSigla());
+    
         
-        
-        
-        
-        
-        
-        
+       }
+    
     }     
  }
     
